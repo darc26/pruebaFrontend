@@ -243,8 +243,19 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     letter-spacing:5px;
     line-height:1.8;
-    
+    position:relative;
 }
+.heading:after {
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    content: '';
+    background: #FFC300;
+}
+.heading span {
+    display: block; }
 
 #row1{
     padding-left: 286px;
