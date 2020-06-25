@@ -1,4 +1,6 @@
- [
+{
+  "totalResults": 14,
+  "articles": [
     {
       "source": {
         "id": null,
@@ -110,9 +112,9 @@
       },
       "author": "lanacion.com",
       "title": "Brian May contó que estuvo al borde la muerte tras sufrir un infarto",
-      "description": "Brian May otra vez con problemas de salud\r\n Crédito: Instagram\r\nDespués de pasar un agitado mes con su salud \r\nBrian May\r\n, el guitarrista de \r\nQueen reveló\r\nen una serie de videos en su cuenta de In… [+2610 chars]",
+      "description": "",
       "url": "https://www.lanacion.com.ar/espectaculos/personajes/brian-may-conto-estuvo-al-borde-muerte-nid2369383",
-      "urlToImage": "https://cdn.proceso.com.mx/media/2020/05/alcalde-Tultepec.jpg",
+      "urlToImage": "https://www.lanacion.com.ar//bucket3.glanacion.com/anexos/fotos/29/3264529.jpg",
       "publishedAt": "2020-05-25T15:31:00Z",
       "content": "Brian May otra vez con problemas de salud\r\n Crédito: Instagram\r\nDespués de pasar un agitado mes con su salud \r\nBrian May\r\n, el guitarrista de \r\nQueen reveló\r\nen una serie de videos en su cuenta de In… [+2610 chars]"
     },
@@ -151,7 +153,7 @@
       "title": "Dieta mediterránea: así es la prueba que identifica tu riesgo de infarto según lo que comes",
       "description": "Científicos españoles diseñan un análisis de sangre que detecta la \"huella metabólica\" de la dieta mediterránea y detecta quién la sigue y quién no.",
       "url": "https://www.elespanol.com/ciencia/nutricion/20200523/dieta-mediterranea-prueba-identifica-riesgo-infarto-comes/489951817_0.html",
-      "urlToImage": "https://cdn.proceso.com.mx/media/2020/05/alcalde-Tultepec.jpg",
+      "urlToImage": "https://s1.eestatic.com/2017/07/21/actualidad/Actualidad_232989411_40498369_1706x960.jpg",
       "publishedAt": "2020-05-23T00:25:22Z",
       "content": "Noticias relacionadas\r\nConocer los hábitos alimenticios de una persona es esencial para evaluar su riesgo cardiovascular pero esta información suele obtenerse con cuestionarios que no son fiables al … [+3545 chars]"
     },
@@ -182,3 +184,4 @@
       "content": "El ex coordinador federal de IU, Julio Anguita, ha muerto a los 78 años de edad tras no superar una parada cardíaca que sufrió durante la mañana del pasado sábado.\r\nEl también ex alcalde de Córdoba h… [+989 chars]"
     }
   ]
+}

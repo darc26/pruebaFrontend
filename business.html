@@ -78,11 +78,11 @@
             http.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
                     let data = JSON.parse(this.responseText);
+                    let datas= data.articles;
                     const text = search.value.toLowerCase();
-                    for( let article of data){
+                    for( let article of datas){
                         let author      =  article.author.toLowerCase();
                         console.log(author);
-                        
                         let title       =  article.title.toLowerCase();
                         let description =  article.description.toLowerCase();
                         let urlToImage  =  article.urlToImage.toLowerCase();
