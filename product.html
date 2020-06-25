@@ -59,7 +59,7 @@
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
-                        <div class="modal-dialog">
+                        <div class="modal-dialog modal-xl">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
@@ -89,7 +89,6 @@
                                         </tfoot>
                                     </table>
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
@@ -97,12 +96,11 @@
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-   
-     <script>
+    <script>
         function format ( d ) {
             return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
                 '<tr>'+
@@ -112,15 +110,12 @@
                     '<td>'+d.title+'</td>'+
                 '</tr>'+
                 '<tr>'+
-                    '<td>Full name:</td>'+
                     '<td>'+d.description+'</td>'+
                 '</tr>'+
                 '<tr>'+
-                    '<td>Full name:</td>'+
                     '<td>'+d.urlToImage+'</td>'+
                 '</tr>'+
                 '<tr>'+
-                    '<td>Full name:</td>'+
                     '<td>'+d.publishedAt+'</td>'+
                 '</tr>'+
             '</table>';
@@ -128,18 +123,25 @@
  
         $(document).ready(function() {
             var table = $('#product').DataTable( {
+                "dom": '<"top"i>rt<"bottom"lp><"clear">',
+                "ordering": true,
+                "info": true,
+                "autoWidth": true,
+                "responsive": true,
                 "ajax"  :{
                     "url" :"JsonTest.json",
-                    data: $("#product").serialize(),
-                    success: function(data){
-                        console.log(data);
-                    }
+                    dataSrc: "articles",
                 } ,
                 "columns": [
                     { "data": "author" },
                     { "data": "title" },
                     { "data": "description" },
-                    { "data": "urlToImage" },
+                    {
+                        "data": "urlToImage",
+                        "render": function (data, type, JsonResultRow, meta) {
+                               return '<img src="'+data+'"  width= "119px">';
+                           }
+                    },
                     { "data": "publishedAt" },
                 ],
                 "order": [[1, 'asc']]
